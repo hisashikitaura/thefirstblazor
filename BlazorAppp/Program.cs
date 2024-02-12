@@ -1,4 +1,4 @@
-using APMApp.Components;
+using BlazorAppp.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 

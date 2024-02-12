@@ -1,0 +1,27 @@
+﻿@page "/"
+
+<FluentCard Width="400px" Height="250px">
+  <h2>Hello World!</h2>
+  <FluentButton Appearance="@Appearance.Accent">Click Me</FluentButton>
+</FluentCard>
+		
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<FluentIcon Value="@(new Icons.Regular.Size24.Save())" />
+@* <FluentIcon Icon="@(Icons.Regular.Size24.Save)" /> *@
+<FluentEmoji Value="@(new Emojis.PeopleBody.Color.Default.Artist())" />
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
